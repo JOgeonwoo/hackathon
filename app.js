@@ -294,7 +294,7 @@ app.post('/generateReview', async (req, res) => {
 });
 
 // 서버 리스닝
-const port = 80;
+const port = process.env.PORT || 80;
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
