@@ -14,8 +14,8 @@ function nextPage1() {
     location.href = "Step1.html";
 }
 function nextPage2() {
-    window.location.href = 'http://localhost:3000/login';
+    window.location.href = 'login.html';
 }
 function nextPage3() {
-    location.href = "http://localhost:3000/signup";
+    location.href = "signup.html";
 }
