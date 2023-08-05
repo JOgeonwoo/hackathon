@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오늘의 하루</title>
+    <link rel="stylesheet" href="/views/Step1.css">
+</head>
+<body>
+    <header>
+        <h1>Step 1. 어디서 하루를 보내실 건가요?</h1>
+        <h2>장소는 최대 3개까지 선택 가능합니다!</h2>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="memo-wrap">
+                <h3>=== Today's Course ===</h3>
+                <button class="memo-title-1" id="memo-title-1"></button>
+                <div class="memo-article-1" id="memo-article-1"></div>
+                <button class="memo-title-2" id="memo-title-2"></button>
+                <div class="memo-article-2" id="memo-article-2"></div>
+                <button class="memo-title-3" id="memo-title-3"></button>
+                <div class="memo-article-3" id="memo-article-3"></div>
+            </div>
+            <div class="map" id="map">
+                <img src="https://raw.githubusercontent.com/rexkim1020/date-course/main/KakaoTalk_20230729_010534166.png" 
+                class="Gangbuk-gu" id="Gangbuk" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">
+                <img src="https://raw.githubusercontent.com/rexkim1020/date-course/main/KakaoTalk_20230729_010534269.png" 
+                class="Dobong-gu" id="Dobong" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">
+                <img src="https://raw.githubusercontent.com/rexkim1020/date-course/main/KakaoTalk_20230729_010534369.png" 
+                class="Nowon-gu" id="Nowon" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">
+                <img src="https://raw.githubusercontent.com/rexkim1020/date-course/main/KakaoTalk_20230729_010534466.png" 
+                class="Jungrang-gu" id="Jungrang" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">
+                <img src="https://raw.githubusercontent.com/rexkim1020/date-course/main/KakaoTalk_20230729_010534575.png" 
+                class="Dongdaemun-gu" id="Dongdaemun" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">
+                <img src="https://raw.githubusercontent.com/rexkim1020/date-course/main/KakaoTalk_20230729_010534875.png" 
+                class="Seongbuk-gu" id="Seongbuk" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">
+                <img src="https://raw.githubusercontent.com/rexkim1020/date-course/main/KakaoTalk_20230729_010534777.png" 
+                class="Jongro-gu" id="Jongro" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">
+                <img src="https://raw.githubusercontent.com/rexkim1020/date-course/main/KakaoTalk_20230729_010534675.png" 
+                class="Eunpyeong-gu" id="Eunpyeong" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">
+                <img src="https://raw.githubusercontent.com/rexkim1020/date-course/main/KakaoTalk_20230729_010535099.png" 
+                class="Seodaemun-gu" id="Seodaemun" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">
+                <img src="https://raw.githubusercontent.com/rexkim1020/date-course/main/KakaoTalk_20230729_010535235.png" 
+                class="Jung-gu" id="Jung" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">
+                <img src="https://raw.githubusercontent.com/rexkim1020/date-course/main/KakaoTalk_20230729_010535337.png" 
+                class="Seongdong-gu" id="Seongdong" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">
+                <img src="https://raw.githubusercontent.com/rexkim1020/date-course/main/KakaoTalk_20230729_010535442.png" 
+                class="Mapo-gu" id="Mapo" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">
+                <img src="https://raw.githubusercontent.com/rexkim1020/date-course/main/KakaoTalk_20230729_010535563.png" 
+                class="Yongsan-gu" id="Yongsan" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">
+                <img src="https://raw.githubusercontent.com/rexkim1020/date-course/main/KakaoTalk_20230729_010534973.png" 
+                class="Gwangjin-gu" id="Gwangjin" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">
+                <img src="https://raw.githubusercontent.com/rexkim1020/date-course/main/KakaoTalk_20230729_010535684.png" 
+                class="HanRiver">
+                <img src="https://raw.githubusercontent.com/rexkim1020/date-course/main/KakaoTalk_20230729_010535784.png" 
+                class="Gangseo-gu" id="Gangseo" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">
+                <img src="https://raw.githubusercontent.com/rexkim1020/date-course/main/KakaoTalk_20230729_010536086.png" 
+                class="Yeongdeungpo-gu" id="Yeongdeungpo" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">
+                <img src="https://raw.githubusercontent.com/rexkim1020/date-course/main/KakaoTalk_20230729_010535986.png" 
+                class="Yangcheon-gu" id="Yangcheon" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">
+                <img src="https://raw.githubusercontent.com/rexkim1020/date-course/main/KakaoTalk_20230729_010536386.png" 
+                class="Guro-gu" id="Guro" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"> 
+                <img src="https://raw.githubusercontent.com/rexkim1020/date-course/main/KakaoTalk_20230729_010536187.png" 
+                class="Dongjak-gu" id="Dongjak" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">
+                <img src="https://raw.githubusercontent.com/rexkim1020/date-course/main/KakaoTalk_20230729_010536631.png" 
+                class="Gwanak-gu" id="Gwanak" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">
+                <img src="https://raw.githubusercontent.com/rexkim1020/date-course/main/KakaoTalk_20230729_010536511.png" 
+                class="Geumcheon-gu" id="Geumcheon" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">
+                <img src="https://raw.githubusercontent.com/rexkim1020/date-course/main/KakaoTalk_20230729_010536736.png" 
+                class="Seocho-gu" id="Seocho" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">
+                <img src="https://raw.githubusercontent.com/rexkim1020/date-course/main/KakaoTalk_20230729_010536836.png" 
+                class="Gangnam-gu" id="Gangnam" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">
+                <img src="https://raw.githubusercontent.com/rexkim1020/date-course/main/KakaoTalk_20230729_010536292.png" 
+                class="Songpa-gu" id="Songpa" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">
+                <img src="https://raw.githubusercontent.com/rexkim1020/date-course/main/KakaoTalk_20230729_010535883.png" 
+                class="Gangdong-gu" id="Gangdong" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"> 
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <button class="next" id="next-button">다음</button>
+    </footer>
+    <script src="/views/Step1.js"></script>
+</body>
+</html>
