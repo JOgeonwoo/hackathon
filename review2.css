@@ -1,0 +1,178 @@
+/* ===== font ===== */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@font-face {
+    font-family: 'KyoboHandwriting2021sjy';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KyoboHandwriting2021sjy.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Giants-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'IBMPlexSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ===== setting ===== */
+html{
+    background-color: #f0f2f3;
+}
+header{
+    padding: 10px 0 0 50px;
+    font-size: 18px;
+    font-family: 'IBMPlexSansKR-Regular';
+}
+main{
+    padding: 0 0 100px 50px;
+}
+script{
+    padding: 0 0 100px 50px;
+    font-family: 'IBMPlexSansKR-Regular';
+    font-weight: bolder;
+}
+#search{
+    width: 500px;
+    height: 30px;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 12px 12px;
+
+    font-size: 18px;
+    font-family: 'IBMPlexSansKR-Regular';
+}
+#userInput{
+    height: 480px;
+    width: 1000px;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 15px;
+
+    font-size: 25px;
+    font-family: 'IBMPlexSansKR-Regular';
+    vertical-align: top;
+    text-align: start;
+    line-height: 150%;
+    word-break: break-all;
+    background-color: white;
+}
+img{
+    position: absolute;
+    top: 200px;
+    left: 545px;
+}
+.modal-content{
+    position: absolute;
+    left: 55px;
+}
+
+#button-0{
+    border: 3px solid black;
+    font-size: 20px;
+    font-family: 'IBMPlexSansKR-Regular';
+    font-weight: bold;
+    border-radius: 20px;
+    height: 55px;
+    width: 330px;
+    padding: 10px;
+    position: absolute;
+    top: 270px;
+    left: 58px;
+}
+#button-1{
+    border: 3px solid black;
+    font-size: 20px;
+    font-family: 'IBMPlexSansKR-Regular';
+    font-weight: bold;
+    border-radius: 20px;
+    height: 55px;
+    width: 330px;
+    padding: 10px;
+    position: absolute;
+    top: 270px;
+    left: 408px;
+}
+#button-2{
+    border: 3px solid black;
+    font-size: 20px;
+    font-family: 'IBMPlexSansKR-Regular';
+    font-weight: bold;
+    border-radius: 20px;
+    height: 55px;
+    width: 330px;
+    padding: 10px;
+    position: absolute;
+    top: 270px;
+    left: 758px;
+}
+#button-3{
+    border: 3px solid black;
+    font-size: 20px;
+    font-family: 'IBMPlexSansKR-Regular';
+    font-weight: bold;
+    border-radius: 20px;
+    height: 55px;
+    width: 330px;
+    padding: 10px;
+    position: absolute;
+    top: 270px;
+    left: 1108px;
+}
+#button-4{
+    border: 3px solid black;
+    font-size: 20px;
+    font-family: 'IBMPlexSansKR-Regular';
+    font-weight: bold;
+    border-radius: 20px;
+    height: 55px;
+    width: 330px;
+    padding: 10px;
+    position: absolute;
+    top: 270px;
+    left: 1458px;
+}
+#submitBtn{
+    border: 3px solid black;
+    font-size: 20px;
+    font-family: 'IBMPlexSansKR-Regular';
+    font-weight: bold;
+    border-radius: 25px;
+    height: 60px;
+    width: 100px;
+    padding: 10px;
+    position: absolute;
+    left: 1110px;
+    top: 865px;
+}
+.modal{
+    width: 500px;
+}
+
+/* ===== button ===== */
+.next{
+    float: left;
+    position: absolute;
+    margin-right: 50px;
+    padding: 8px 30px;
+    border-radius: 30px;
+    right: 0px;
+    bottom: 0px;
+    margin-bottom: 20px;
+    border: 3px solid black;
+    box-shadow: 4px 3px black;
+
+    font-size: 20px;
+    font-family: 'Giants-Bold';
+    color: black;
+    background-color: rgb(248, 248, 248);
+
+    transition-duration: 0.3s;
+}
+.next:active{
+    box-shadow: none;
+}

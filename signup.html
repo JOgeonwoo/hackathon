@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>회원 가입 페이지</title>
+  <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+  <h1>오늘의 하루</h1>
+  <form action="/signup" method="post">
+    <input type="text" id="name" name="name" placeholder="이름" required>
+    <input type="text" id="id" name="username" placeholder="아이디" required>
+    <input type="email" id="email" name="email" placeholder="이메일 주소" required>
+    <input type="password" id="password" name="password" placeholder="비밀번호" required>
+    <button type="submit" onclick="goHome(event)">회원 가입</button>
+  </form>
+  <script>
+    function goHome(event) {
+      location.href = "index.html";
+    }
+  </script>
+</body>
+</html>

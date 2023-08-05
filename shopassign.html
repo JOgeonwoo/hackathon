@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오늘의 하루</title>
+    <style>
+        /* ===== font ===== */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@font-face {
+    font-family: 'KyoboHandwriting2021sjy';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KyoboHandwriting2021sjy.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Giants-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'IBMPlexSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ===== setting ===== */
+html{
+    background-color: #f0f2f3;
+}
+header{
+    padding: 10px 0 0 50px;
+    font-size: 18px;
+    font-family: 'IBMPlexSansKR-Regular';
+}
+main{
+    padding: 0 0 100px 50px;
+}
+script{
+    padding: 0 0 100px 50px;
+    font-family: 'IBMPlexSansKR-Regular';
+    font-weight: bolder;
+}
+#search{
+    width: 500px;
+    height: 30px;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 12px 12px;
+
+    font-size: 18px;
+    font-family: 'IBMPlexSansKR-Regular';
+}
+#search2{
+    width: 300px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 12px 12px;
+    font-size: 15px;
+    font-family: 'IBMPlexSansKR-Regular';
+}
+#userInput{
+    height: 350px;
+    width: 1000px;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 30px 0 0 25px;
+
+    font-size: 25px;
+    font-family: 'IBMPlexSansKR-Regular';
+    font-weight: bold;
+    vertical-align: top;
+    text-align: start;
+    line-height: 150%;
+    word-break: break-all;
+    background-color: white;
+
+}
+img{
+    position: absolute;
+    top: 200px;
+    left: 545px;
+}
+.modal-content{
+    position: absolute;
+    left: 55px;
+}
+
+#button-0{
+    border: 3px solid black;
+    font-size: 20px;
+    font-family: 'IBMPlexSansKR-Regular';
+    font-weight: bold;
+    border-radius: 20px;
+    height: 55px;
+    width: 300px;
+    padding: 10px;
+    position: absolute;
+    top: 270px;
+    left: 58px;
+}
+#button-1{
+    border: 3px solid black;
+    font-size: 20px;
+    font-family: 'IBMPlexSansKR-Regular';
+    font-weight: bold;
+    border-radius: 20px;
+    height: 55px;
+    width: 300px;
+    padding: 10px;
+    position: absolute;
+    top: 270px;
+    left: 378px;
+}
+#button-2{
+    border: 3px solid black;
+    font-size: 20px;
+    font-family: 'IBMPlexSansKR-Regular';
+    font-weight: bold;
+    border-radius: 20px;
+    height: 55px;
+    width: 300px;
+    padding: 10px;
+    position: absolute;
+    top: 270px;
+    left: 698px;
+}
+#button-3{
+    border: 3px solid black;
+    font-size: 20px;
+    font-family: 'IBMPlexSansKR-Regular';
+    font-weight: bold;
+    border-radius: 20px;
+    height: 55px;
+    width: 300px;
+    padding: 10px;
+    position: absolute;
+    top: 270px;
+    left: 1018px;
+}
+#button-4{
+    border: 3px solid black;
+    font-size: 20px;
+    font-family: 'IBMPlexSansKR-Regular';
+    font-weight: bold;
+    border-radius: 20px;
+    height: 55px;
+    width: 300px;
+    padding: 10px;
+    position: absolute;
+    top: 270px;
+    left: 1338px;
+}
+#submitBtn{
+    border: 3px solid black;
+    font-size: 20px;
+    font-family: 'IBMPlexSansKR-Regular';
+    font-weight: bold;
+    border-radius: 25px;
+    height: 60px;
+    width: 100px;
+    padding: 10px;
+    position: absolute;
+    left: 1110px;
+    top: 803px;
+}
+.modal{
+    width: 500px;
+}
+select {
+  width: 200px; 
+  height: 50px;
+  padding: .8em .8em; 
+  font-family: inherit; 
+  background: url(https://farm1.staticflickr.com/379/19928272501_4ef877c265_t.jpg) no-repeat 95% 50%; 
+  border: 2px solid black; 
+  border-radius: 10px;
+  -webkit-appearance: none; 
+  -moz-appearance: none;
+  appearance: none;
+}
+h2{
+    font-size: 27px;
+    font-family: 'IBMPlexSansKR-Regular';
+    font-weight: bold;
+}
+h3{
+    font-size: 20px;
+    font-family: 'IBMPlexSansKR-Regular';
+    font-weight: bold; 
+}
+/* ===== button ===== */
+.next{
+    float: left;
+    position: absolute;
+    margin-right: 50px;
+    padding: 8px 30px;
+    border-radius: 30px;
+    right: 0px;
+    bottom: 0px;
+    margin-bottom: 20px;
+    border: 3px solid black;
+    box-shadow: 4px 3px black;
+
+    font-size: 20px;
+    font-family: 'Giants-Bold';
+    color: black;
+    background-color: rgb(248, 248, 248);
+
+    transition-duration: 0.3s;
+}
+.next:active{
+    box-shadow: none;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>당신의 가게를 등록하세요!</h1>
+        <h2>구체적인 상호명을 입력해주세요.</h2>
+    </header>
+    <main>
+        <input type="text" id="search" onchange="Searching()" placeholder="상호명 입력">
+        <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png" height="25px">
+        <div id="buttonContainer">
+            
+        </div>
+    </main>
+    <footer>
+        <button class="next" id="next-button">Home</button>
+    </footer>
+    <script>
+        $(document).ready(function() {
+        var selectTarget = $('.selectbox select');
+
+        selectTarget.change(function(){
+            var select_name = $(this).children('option:selected').text();
+            $(this).siblings('label').text(select_name);
+        });
+        });
+        
+        function Searching() {
+            const searchValue = document.getElementById("search").value;
+            fetch('https://dapi.kakao.com/v2/local/search/keyword.json?query=' + encodeURIComponent(searchValue), {
+                method: 'GET',
+                headers: { 'Authorization': 'KakaoAK 296efdeedc0315b7f56af9b900565a97' },
+            })
+            .then((response) => response.json())
+            .then((data) => {
+                const buttonContainer = document.getElementById('buttonContainer');
+                buttonContainer.innerHTML = ''; 
+
+                const modal = document.createElement('div');
+                modal.className = 'modal';
+                for (let i = 0; i < 5; i++) {
+                    const placeName = data['documents'][i]['place_name'];
+                    //const placeAdress= data['documents'][i]['adress_name']; 이거 왜 undifined 뜨냐
+                    const buttonElement = document.createElement('button');
+                    buttonElement.textContent = placeName;
+                    buttonElement.id = 'button-' + i;
+                    buttonElement.addEventListener('click', function() {
+                        modal.innerHTML = `
+                            <div class="modal-content">
+                                <h2>${placeName}에 알맞는 키워드들을 선택해 주세요!</h2>
+                                <h3>본인의 가게에 가장 알맞는 키워드를 선택해야 검색 확률이 높아집니다!</h3>
+                                <div id="userInput">
+                                    ${placeName}이(가) 제공하는 컨텐츠를 선택하세요. &nbsp
+                                    <select name="usershopcontent">
+                                        <option value="none">업종을 선택해 주세요 </option>
+                                        <option value="한식">한식</option>
+                                        <option value="양식">양식</option>
+                                        <option value="중식">중식</option>
+                                        <option value="일식">일식</option>
+                                        <option value="동남아시아">동남아시아</option>
+                                        <option value="분식">분식</option>
+                                        <option value="카페">카페</option>
+                                        <option value="패스트푸드">패스트푸드</option>
+                                        <option value="디저트">디저트</option>
+                                        <option value="주류">주류</option>
+                                        <option value="숙박">숙박</option>
+                                        <option value="사진">사진</option>
+                                        <option value="체험">체험</option>
+                                        <option value="관람">관람</option>
+                                        <option value="액티비티">액티비티</option>
+                                        <option value="피씨방">피씨방</option>
+                                        <option value="노래방">노래방</option>
+                                        <option value="보드게임">보드게임</option>
+                                        <option value="방탈출">방탈출</option>
+                                    </select>
+                                    <br><br>
+                                    당신의 이름을 입력해 주세요. &nbsp &nbsp <input type="text" id="search2"  placeholder="성함을 입력하세요.">
+                                    <br><br>
+                                    전화번호를 입력해 주세요. &nbsp &nbsp <input type="text" id="search2"  placeholder="전화번호를 입력하세요.">
+                                    <br><br>
+                                    사업자 등록증을 제출해 주세요. &nbsp &nbsp <form> <input type="file" id="file" multiple> </form>
+                                </div>
+                            </div>
+                            <button id="submitBtn">등록</button>
+                        `;
+                        document.body.appendChild(modal);
+                    });
+                    
+                    buttonContainer.appendChild(buttonElement);
+                }
+            })
+            .catch((error) => console.log(error));
+        }
+        (function () {
+        var $file = document.getElementById("file")
+        var dropZone = document.querySelector(".drop-zone")
+        
+        var toggleClass = function (className) {
+            console.log("current event: " + className)
+        }
+        
+        var showFiles = function (files) {
+            dropZone.innerHTML = ""
+            for (var i = 0, len = files.length; i < len; i++) {
+                dropZone.innerHTML += "<p>" + files[i].name + "</p>"
+            }
+        }
+        var selectFile = function (files) {
+            // input file 영역에 드랍된 파일들로 대체
+            $file.files = files
+            showFiles($file.files)
+        }
+        $file.addEventListener("change", function (e) {
+            showFiles(e.target.files)
+        })   
+        })();
+        document.getElementById("next-button").addEventListener("click", (e) => {
+            location.href = "todate.html";
+        });
+    </script>
+</body>
+</html>

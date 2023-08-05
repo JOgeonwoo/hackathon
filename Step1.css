@@ -1,0 +1,334 @@
+/* ===== font ===== */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap');
+@font-face {
+    font-family: 'KyoboHandwriting2021sjy';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KyoboHandwriting2021sjy.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Giants-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'IBMPlexSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* ===== settings ===== */
+html{
+    background-color: #f0f2f3;
+}
+header{
+    padding: 10px 0 0 50px;
+    font-size: 18px;
+    font-family: 'IBMPlexSansKR-Regular';
+}
+main{
+    padding: 0 0 100px 0;
+    height: 670px;
+}
+.container{
+    width: 100%;
+    max-width: 1800px;
+    padding: 0 40px;
+    margin: auto;
+    position: relative;
+}
+.container img{
+    display: block;
+    width: auto;
+}
+.Gangbuk-gu{
+    position: absolute;
+    height: 160px;
+    left: 691.5px;
+    top: 98px;
+}
+.Dobong-gu{ 
+    position: absolute;
+    height: 150px;
+    left: 750px;
+    top: 61px;
+}
+.Nowon-gu{
+    position: absolute;
+    height: 177px;
+    left: 817px;
+    top: 75px;
+}
+.Jungrang-gu{
+    position: absolute;
+    height: 110px;
+    left: 872.3px;
+    top: 236px;
+}
+.Dongdaemun-gu{
+    position: absolute;
+    height: 98px;
+    left: 777px;
+    top: 272px;
+}
+.Seongbuk-gu{
+    position: absolute;
+    height: 134px;
+    left: 679px;
+    top: 199px;
+}
+.Jongro-gu{
+    position: absolute;
+    height: 150px;
+    left: 626.1px;
+    top: 205.3px;
+}
+.Eunpyeong-gu{
+    position: absolute;
+    height: 187.5px;
+    left: 487.5px;
+    top: 145.5px;
+}
+.Seodaemun-gu{
+    position: absolute;
+    height: 117.5px;
+    left: 526.5px;
+    top: 266.5px;
+}
+.Jung-gu{
+    position: absolute;
+    height: 52.5px;
+    left: 649.8px;
+    top: 352.5px;
+}
+.Seongdong-gu{
+    position: absolute;
+    height: 94px;
+    left: 744.3px;
+    top: 349.3px;
+}
+.Mapo-gu{
+    position: absolute;
+    height: 116px;
+    left: 440px;
+    top: 306.5px;
+}
+.Yongsan-gu{
+    position: absolute;
+    height: 80px;
+    left: 632px;
+    top: 397px;
+}
+.Gwangjin-gu{
+    position: absolute;
+    height: 99.7px;
+    left: 846.75px;
+    top: 348px;
+}
+.HanRiver{
+    position: absolute;
+    height: 175px;
+    left: 405px;
+    top: 330px;
+    z-index: -9999;
+}
+.Gangseo-gu{
+    position: absolute;
+    height: 175px;
+    left: 255px;
+    top: 274px;
+}
+.Yeongdeungpo-gu{
+    position: absolute;
+    height: 145px;
+    left: 478.5px;
+    top: 400px;
+}
+.Yangcheon-gu{
+    position: absolute;
+    height: 96px;
+    left: 357px;
+    top: 408.5px;
+}
+.Guro-gu{
+    position: absolute;
+    height: 94px;
+    left: 337px;
+    top: 480px;
+}
+.Dongjak-gu{
+    position: absolute;
+    height: 89.5px;
+    left: 530px;
+    top: 479.5px;
+}
+.Gwanak-gu{
+    position: absolute;
+    height: 136px;
+    left: 521px;
+    top: 535px;
+}
+.Geumcheon-gu{
+    position: absolute;
+    height: 120px;
+    left: 464.5px;
+    top: 550.5px;
+}
+.Seocho-gu{
+    position: absolute;
+    height: 208px;
+    left: 691.5px;
+    top: 465px;
+}
+.Gangnam-gu{
+    position: absolute;
+    height: 170.5px;
+    left: 755.7px;
+    top: 443px;
+}
+.Songpa-gu{
+    position: absolute;
+    height: 164px;
+    left: 865.5px;
+    top: 429.4px;
+}
+.Gangdong-gu{
+    position: absolute;
+    height: 145px;
+    left: 957px;
+    top: 328.3px;
+}
+
+/* ===== memo ===== */
+.memo-wrap{
+    position: absolute;
+    background: #e7e7e7;
+    width: 500px;
+    height: 780px;
+    border-radius: 10px;
+    padding: 0;
+    margin-left: 1280px;
+    margin-top: -100px;
+    border: 3px solid black;
+    box-shadow: 5px 4px black;
+
+    text-align: center;
+    font-size: 20px;
+    font-family: 'KyoboHandwriting2021sjy';
+}
+.memo-title-1{
+    position: static;
+    background: #feea6d;
+    width: 110px;
+    height: 40px;
+    margin-left: 17px;
+    border-radius: 10px 10px 0 0;
+    border: 3px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 22px;
+    font-family: 'Giants-Bold';
+}
+.memo-article-1{
+    position: static;
+    background: #FFFCB0;
+    width: 460px;
+    height: 160px;
+    margin: auto;
+    margin-bottom: 25px;
+    border-radius: 0 10px 10px 10px;
+    border: 3px solid black;
+
+    font-size: 18px;
+    font-family: 'Noto Serif KR', serif;
+    text-align: left;
+}
+.memo-title-2{
+    position: static;
+    background: #feea6d;
+    width: 110px;
+    height: 40px;
+    margin-left: 17px;
+    border-radius: 10px 10px 0 0;
+    border: 3px solid black;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 22px;
+    font-family: 'Giants-Bold';
+}
+.memo-article-2{
+    position: static;
+    background: #FFFCB0;
+    width: 460px;
+    height: 160px;
+    margin: auto;
+    margin-bottom: 25px;
+    border-radius: 0 10px 10px 10px;
+    border: 3px solid black;
+
+    font-size: 18px;
+    font-family: 'Noto Serif KR', serif;
+    text-align: left;
+}
+.memo-title-3{
+    position: static;
+    background: #feea6d;
+    width: 110px;
+    height: 40px;
+    margin-left: 17px;
+    border-radius: 10px 10px 0 0;
+    border: 3px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 22px;
+    font-family: 'Giants-Bold';
+}
+.memo-article-3{
+    position: static;
+    background: #FFFCB0;
+    width: 460px;
+    height: 160px;
+    margin: auto;
+    border-radius: 0 10px 10px 10px;
+    border: 3px solid black;
+
+    font-size: 18px;
+    font-family: 'Noto Serif KR', serif;
+    text-align: left;
+}
+
+/* ===== button ===== */
+.next{
+    float: left;
+    position: absolute;
+    margin-right: 50px;
+    padding: 8px 30px;
+    border-radius: 30px;
+    right: 0px;
+    bottom: 0px;
+    margin-bottom: 20px;
+    border: 3px solid black;
+    box-shadow: 4px 3px black;
+
+    font-size: 20px;
+    font-family: 'Giants-Bold';
+    color: black;
+    background-color: rgb(248, 248, 248);
+
+    transition-duration: 0.3s;
+}
+.next:active{
+    box-shadow: none;
+}

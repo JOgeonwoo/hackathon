@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>로그인 페이지</title>
+  <link rel="stylesheet" href="signin.css">
+</head>
+<body>
+  <h1>오늘의 하루</h1>
+  <form action="/login" id="form" method="post">
+    <input type="text" id="id" name="username" placeholder="아이디" required>
+    <input type="password" id="password" name="password" placeholder="비밀번호" required>
+    <button type="submit" id="submit" onclick="goHome(event)">로그인</button>
+  </form>
+  <p>아직 회원이 아니신가요? <a href="signup.html">회원가입</a>을 해주세요.</p>
+  <script>
+    function goHome(event) {
+      location.href = "index.html";
+    }
+  </script>
+</body>
+</html>

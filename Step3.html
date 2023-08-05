@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오늘의 하루</title>
+    <link rel="stylesheet" href="Step3.css">
+</head>
+<body>
+    <header>
+        <h1>Step 3. 이제 각각의 컨텐츠에 원하는 느낌을 말해주세요!</h1>
+        <h2>키워드도 컨텐츠별 최대 3개까지 선택 가능합니다!</h2>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="keyword-buttons">
+                <button class="keyword-button" draggable="true" id="맛집">맛집</button>
+                <button class="keyword-button" draggable="true" id="뷰맛집">뷰맛집</button>
+                <button class="keyword-button" draggable="true" id="핫플">핫플</button>
+                <button class="keyword-button" draggable="true" id="따뜻한">따뜻한</button>
+                <button class="keyword-button" draggable="true" id="깔끔한">깔끔한</button>
+                <button class="keyword-button" draggable="true" id="넓은">넓은</button>
+                <button class="keyword-button" draggable="true" id="사진맛집">사진맛집</button>
+                <button class="keyword-button" draggable="true" id="단체모임">단체모임</button>
+                <button class="keyword-button" draggable="true" id="혼밥">혼밥</button>
+                <button class="keyword-button" draggable="true" id="친절한">친절한</button>
+                <button class="keyword-button" draggable="true" id="인스타감성">인스타감성</button>
+                <button class="keyword-button" draggable="true" id="기념일">기념일</button>
+                <button class="keyword-button" draggable="true" id="가성비좋은">가성비좋은</button>
+                <button class="keyword-button" draggable="true" id="아늑한">아늑한</button>
+                <button class="keyword-button" draggable="true" id="푸짐한">푸짐한</button>
+                <button class="keyword-button" draggable="true" id="차분한">차분한</button>
+                <button class="keyword-button" draggable="true" id="힙한">힙한</button>
+                <button class="keyword-button" draggable="true" id="추억">추억</button>
+                <button class="keyword-button" draggable="true" id="재밌는">재밌는</button>
+                <button class="keyword-button" draggable="true" id="교통이좋은">교통이좋은</button>
+                <button class="keyword-button" draggable="true" id="분위기좋은">분위기좋은</button>
+                <button class="keyword-button" draggable="true" id="짜릿한">짜릿한</button>
+                <button class="keyword-button" draggable="true" id="시설이좋은">시설이좋은</button>
+                <button class="keyword-button" draggable="true" id="활동적인">활동적인</button>
+                <button class="keyword-button" draggable="true" id="실내의">실내의</button>
+                <button class="keyword-button" draggable="true" id="야외의">야외의</button>
+                <button class="keyword-button" draggable="true" id="다양한">다양한</button>
+                <button class="keyword-button" draggable="true" id="전통적인">전통적인</button>
+            </div>
+            <div class="memo-wrap">
+                <h3>=== Today's Course ===</h3>
+                <button class="memo-title-1" id="memo-title-1"></button>
+                <div class="memo-article-1" id="memo-article-1">
+                    <button class="selected-content" id="selected-content-1-1"></button>
+                    <button class="selected-feeling-backspace" id="selected-feeling-backspace-1-1"></button>
+                    <button class="selected-content" id="selected-content-1-2"></button>
+                    <button class="selected-feeling-backspace" id="selected-feeling-backspace-1-2"></button>
+                    <button class="selected-content" id="selected-content-1-3"></button>
+                    <button class="selected-feeling-backspace" id="selected-feeling-backspace-1-3"></button>
+                </div>
+                <button class="memo-title-2" id="memo-title-2"></button>
+                <div class="memo-article-2" id="memo-article-2">
+                    <button class="selected-content" id="selected-content-2-1"></button>
+                    <button class="selected-feeling-backspace" id="selected-feeling-backspace-2-1"></button>
+                    <button class="selected-content" id="selected-content-2-2"></button>
+                    <button class="selected-feeling-backspace" id="selected-feeling-backspace-2-2"></button>
+                    <button class="selected-content" id="selected-content-2-3"></button>
+                    <button class="selected-feeling-backspace" id="selected-feeling-backspace-2-3"></button>
+                </div>
+                <button class="memo-title-3" id="memo-title-3"></button>
+                <div class="memo-article-3" id="memo-article-3">
+                    <button class="selected-content" id="selected-content-3-1"></button>
+                    <button class="selected-feeling-backspace" id="selected-feeling-backspace-3-1"></button>
+                    <button class="selected-content" id="selected-content-3-2"></button>
+                    <button class="selected-feeling-backspace" id="selected-feeling-backspace-3-2"></button>
+                    <button class="selected-content" id="selected-content-3-3"></button>
+                    <button class="selected-feeling-backspace" id="selected-feeling-backspace-3-3"></button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <button class="next" id="next-button">오늘의 하루 추천받으러 가기!</button>
+    </footer>
+
+    <script src="Step3.js"></script>
+</body>
+</html>
