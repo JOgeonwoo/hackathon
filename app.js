@@ -72,7 +72,7 @@ app.post('/signup', async (req, res) => {
 
 // 로그인 페이지 라우팅
 app.get('/login', (req, res) => {
-  res.cookie('username', '', { maxAge: 0, httpOnly: true, domain: 'todate.shop' });
+  res.cookie('username', '', { maxAge: 0, httpOnly: true });
   res.sendFile(__dirname + '/views/login.html');
 });
 
@@ -99,8 +99,8 @@ app.post('/login', async (req, res) => {
       if (isPasswordMatch) {
         // 로그인 성공
         // 쿠키에 username을 저장
-        res.cookie('username', username, { maxAge: 3600000, httpOnly: true, domain: 'todate.shop' });
-        res.cookie('nname', user.nname, { maxAge: 3600000, httpOnly: true, domain: 'todate.shop' });
+        res.cookie('username', username, { maxAge: 3600000, httpOnly: true });
+        res.cookie('nname', user.nname, { maxAge: 3600000, httpOnly: true });
         res.redirect('/');
       } else {
         // 비밀번호 틀림
@@ -143,7 +143,6 @@ app.use(express.static(__dirname, {
       res.setHeader('Content-Type', 'text/html');
     }
   },
-  domain: 'todate.shop'
 }));
 
 // Step1 페이지 라우팅
@@ -294,7 +293,7 @@ app.post('/generateReview', async (req, res) => {
 });
 
 // 서버 리스닝
-const port = process.env.PORT || 80;
+const port = 3000;
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
